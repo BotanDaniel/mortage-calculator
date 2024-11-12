@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PlusJakartaSans", Courier;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(202, 86%, 94%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-size: 18px;
+  color: gray;
+}
+
+input[type="text"] {
+  height: 30px;
+  width: 80%;
+}
+
+.calculator-container {
+  width: 950px;
+  height: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 2%;
+}
+
+.calculator-inputs {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.calculator-inputs-title {
+  display: flex;
+}
+
+.calculator-inputs-title h1 {
+  font-size: 27px;
+}
+
+.calculator-inputs-title button {
+  background: none;
+  border: none;
+  color: gray;
+  text-decoration: underline;
+  margin-left: 60px;
+}
+
+.calculator-inputs-title button:hover {
+  cursor: pointer;
+}
+
+.mortage-amount {
+  width: 100%;
+}
+
+/* Right side of the form */
+
+.calculator-results {
+  width: 50%;
+  height: 100%;
+  background-color: hsl(202, 55%, 16%);
+  color: #fff;
+  padding: 20px;
+  border-radius: 2% 2% 2% 10%;
+}
+
+.results-container {
+  width: 80%;
+  height: 40%;
+  border-top: 5px solid hsl(61, 70%, 52%);
+  background-color: hsl(201, 72%, 8%);
+  border-radius: 3%;
+  padding: 15px;
+  margin-top: 35px;
+}
+
+.results-container p:nth-child(2) {
+  font-size: 40px;
+  color: hsl(61, 70%, 52%);
+  font-weight: bold;
+}
+
+.results-container p:nth-child(3) {
+  border-top: 2px solid gray;
+}
+
+.results-container p:nth-child(4) {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
