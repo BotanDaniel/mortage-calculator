@@ -1,107 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --bg-color: hsl(202, 86%, 94%);
+  --bg-color-dark: hsl(202, 55%, 16%);
+  --lime: hsl(61, 70%, 52%);
+  --red: hsl(4, 69%, 50%);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PlusJakartaSans", Courier;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  background-color: hsl(202, 86%, 94%);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  width: 100%;
 
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-
-p {
-  font-size: 18px;
-  color: gray;
+  align-items: center;
 }
 
 input[type="text"] {
-  height: 30px;
-  width: 80%;
-}
-
-.calculator-container {
-  width: 950px;
-  height: 65%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 2%;
-}
-
-.calculator-inputs {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 20px;
-}
-
-.calculator-inputs-title {
-  display: flex;
-}
-
-.calculator-inputs-title h1 {
-  font-size: 27px;
-}
-
-.calculator-inputs-title button {
-  background: none;
-  border: none;
-  color: gray;
-  text-decoration: underline;
-  margin-left: 60px;
-}
-
-.calculator-inputs-title button:hover {
+  height: 42px;
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
+.main-container {
+  width: 60%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  border-radius: 3%;
+}
+
+/* CALCULATOR CONTAINER  */
+.calculator-container {
+  width: 50%;
+  height: auto;
+  padding: 3%;
+}
+
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.calculator-header button {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: 17px;
+}
+
 .mortage-amount {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
   width: 100%;
 }
 
-/* Right side of the form */
-
-.calculator-results {
-  width: 50%;
-  height: 100%;
-  background-color: hsl(202, 55%, 16%);
-  color: #fff;
-  padding: 20px;
-  border-radius: 2% 2% 2% 10%;
-}
-
-.results-container {
+.mortage-amount input {
   width: 80%;
-  height: 40%;
-  border-top: 5px solid hsl(61, 70%, 52%);
-  background-color: hsl(201, 72%, 8%);
-  border-radius: 3%;
-  padding: 15px;
-  margin-top: 35px;
+  margin-top: 12px;
 }
 
-.results-container p:nth-child(2) {
-  font-size: 40px;
-  color: hsl(61, 70%, 52%);
+.mortage-term {
+  display: flex;
+  flex-direction: row;
+}
+
+.mortage-term-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+
+.mortage-term-wrapper label {
+  margin-bottom: 12px;
+}
+
+.mortage-term-wrapper input {
+  width: 80%;
+  width: 190px;
+}
+
+/* radio input container */
+.mortage-type-container {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0px;
+}
+
+.mortage-type-container p:first-child {
+  margin-bottom: 12px;
+}
+
+.radio-input-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  height: 50px;
+  border: 1px solid grey;
+  margin: 10px 0px;
+}
+
+.radio-input-container input {
+  margin: 0px 13px;
+}
+
+.radio-input-container p {
+  font-size: 18px;
+}
+
+.calculate-btn {
+  width: 50%;
+  height: 57px;
+  background-color: var(--lime);
+  border: none;
+  padding: 20px;
+  border-radius: 30px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.results-container p:nth-child(3) {
-  border-top: 2px solid gray;
+.calculate-btn::before {
+  content: url("/assets/images/icon-calculator.svg");
+  margin-right: 7px;
 }
 
-.results-container p:nth-child(4) {
+/* RESULTS CONTAINER */
+.results-container-empty {
+  width: 50%;
+  background-color: var(--bg-color-dark);
   color: #fff;
-  font-size: 20px;
-  font-weight: bold;
+  border-radius: 0% 3% 3% 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.results-container-empty img {
+  width: 200px;
+}
+
+.results-container-empty-wrapper {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.results-container-empty-wrapper p {
+  width: 400px;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--bg-color);
 }

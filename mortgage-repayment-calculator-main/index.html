@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
-  <link rel="stylesheet" href="styles.css" />
+    <title>Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="calculator-container">
+        <div class="calculator-header">
+          <h1>Mortage Calculator</h1>
+          <button>Clear All</button>
+        </div>
 
-  <title>Mortgage repayment calculator</title>
-</head>
+        <div class="calculator-inputs">
+          <form class="mortage-amount">
+            <label for="">Mortage Amount</label>
+            <input type="text" />
+          </form>
 
-<div class="calculator-container">
+          <form class="mortage-term">
+            <div class="mortage-term-wrapper">
+              <label for="">Mortage Term</label>
+              <input type="text" />
+            </div>
 
-  <div class="calculator-inputs">
+            <div class="mortage-term-wrapper">
+              <label for="">Interest Rate</label>
+              <input type="text" />
+            </div>
+          </form>
 
-    <div class="calculator-inputs-title">
-      <h1>Mortage Calculator</h1>
-      <button>Clear All</button>
+          <form class="mortage-type-container">
+            <p>Mortage Type</p>
+
+            <div class="radio-input-container">
+              <input type="radio" />
+              <p>Repayment</p>
+            </div>
+
+            <div class="radio-input-container">
+              <input type="radio" />
+              <p>Interest Only</p>
+            </div>
+          </form>
+
+          <button class="calculate-btn">Calculate Repayments</button>
+        </div>
+      </div>
+
+      <!-- RESULTS CONTAINER -->
+      <div class="results-container-empty">
+        <div class="results-container-empty-wrapper">
+          <img src="/assets/images/illustration-empty.svg" alt="" />
+          <h2>Results shown here</h2>
+          <p>
+            Complete the form and click "calculate repayments" to see what your
+            monthly repayments would be.
+          </p>
+        </div>
+      </div>
     </div>
-
-    <div class="mortage-amount">  
-      <p>Mortage Amount</p>
-      <input type="text" >
-    </div>
-
-
-      <p>Mortage Term</p>
-      <input type="text">
-      <p>Interest Rate</p>
-      <input type="text">
-
-    <p>Mortage Type</p>
-    <p> <input type="radio"> Repayment </p>
-    <p> <input type="radio"> Interest Only </p>
-
-    <button>Calculate Repayments</button>
-
-  </div>
-
-  <!-- ///////////////////////////////////////// -->
-
-  <div class="calculator-results">
-    <h2>Your results</h2>
-    <p>Your results are shown below based on the information your provided. To adjust the results, edit the form and
-      click "calculate repayments" again.</p>
-
-    <div class="results-container">
-      <p>Your monthly repayments</p>
-      <p>$1.797.74</p>
-
-
-      <p>Total you'll repay over the term</p>
-      <p>$539.322.94</p>
-    </div>
-
-  </div>
-
-
-</div>
-</body>
-
+  </body>
 </html>

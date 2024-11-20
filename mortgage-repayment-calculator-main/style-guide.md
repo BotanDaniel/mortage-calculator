@@ -18,7 +18,7 @@ The designs were created to the following widths:
 
 ### Neutral
 
-- White: hsl(0, 0%, 100%)
+- White: hsl(0, 0%, 100%)b
 - Slate 100: hsl(202, 86%, 94%)
 - Slate 300: hsl(203, 41%, 72%)
 - Slate 500: hsl(200, 26%, 54%)
@@ -29,7 +29,7 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size (paragraph): 16px 
+- Font size (paragraph): 16px
 
 ### Font
 
